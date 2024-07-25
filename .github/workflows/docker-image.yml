@@ -27,11 +27,13 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t jrm2087/docker-app:0.0.1 .
+        docker build -t jrm2087/docker-app:0.0.2 .
+        docker build -t jrm2087/docker-app:latest .
     
     - name: Push Docker image
       run: |
-        docker push jrm2087/docker-app:0.0.1
+        docker push jrm2087/docker-app:0.0.2
+        docker push jrm2087/docker-app:latest
 
 
 
